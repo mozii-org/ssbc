@@ -1,0 +1,37 @@
+[
+  {
+    "name": "log",
+    "path": "/log",
+    "component": "/home/ubuntu/ssbc/web/pages/log.vue",
+    "chunkName": "pages/log",
+    "_name": "_6a98f8d9"
+  },
+  {
+    "name": "search",
+    "path": "/search",
+    "component": "/home/ubuntu/ssbc/web/pages/search.vue",
+    "chunkName": "pages/search",
+    "_name": "_3f82a223"
+  },
+  {
+    "name": "spider",
+    "path": "/spider",
+    "component": "/home/ubuntu/ssbc/web/pages/spider.vue",
+    "chunkName": "pages/spider",
+    "_name": "_0647a640"
+  },
+  {
+    "name": "h-id",
+    "path": "/h/:id?",
+    "component": "/home/ubuntu/ssbc/web/pages/h/_id.vue",
+    "chunkName": "pages/h/_id",
+    "_name": "_c980b330"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/ubuntu/ssbc/web/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7a9887b2"
+  }
+]
