@@ -1,14 +1,14 @@
 # gen
-SSBC
+gen基于手撕包菜 做了一些本地化修改安装于FreeBSD
 ## 安装说明
 
-使用CentOS7操作系统。
+使用FreeBSD 12.3操作系统。
 
 ### 数据库 ###
-1. 按照MongoDB
+1. 安装MongoDB
 
 ```
-yum install mongodb mongodb-server
+pkg install mongodb
 ```
 
 2. 运行MongoDB
@@ -18,11 +18,10 @@ service mongod start
 ```
 
 ### NodeJS ###
-1. 按照nodejs10
+1. 按照node10
 
 ```
-curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-yum install nodejs
+pkg install node10
 ```
 
 2. 安装pm2
@@ -55,7 +54,7 @@ cd web && pm2 start ecosystem.config.js && cd ..
 配置nginx访问web页面。
 
 ```
-yum install nginx
+pkg install nginx
 service nginx start
 vim /etc/nginx/conf.d/ssbc.conf
 ```
@@ -83,7 +82,7 @@ yum install http://sphinxsearch.com/files/sphinx-2.3.2-1.rhel7.x86_64.rpm
 2. 创建目录
 
 ```
-mkdir -p /data/bt/index/db /data/bt/index/binlog
+mkdir -p /var/bt/index/db /data/bt/index/binlog
 ```
 
 3. 初始化索引
@@ -95,7 +94,7 @@ searchd -c sphinx.conf
 ``
 
 
-## 网站说明
+## 原网站说明
 这是 www.shousibaocai.org 的网站源代码。
 开源的目的是为了促进技术交流和相互学习，把DHT与搜索引擎技术应用到更广泛的领域去。
 
